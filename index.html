@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="board">
+      <div class="display">
+        <div class="players"></div>
+        <div class="customize pregame">Change Names</div>
+        <div class="replay pregame">Play Game</div>
+      </div>
+      <div class="modal">
+        <form action="">
+          <label for="position">Which player are you?</label>
+          <input
+            type="number"
+            class="position"
+            id="position"
+            placeholder="1"
+            min="1"
+            max="2"
+          />
+          <label for="name">What is your name?</label>
+          <input
+            type="text"
+            class="name"
+            id="name"
+            placeholder="Name"
+            maxlength="20"
+          />
+          <button typ="submit" class="sub">Submit</button>
+        </form>
+      </div>
+      <div class="squares">
+        <div class="square-item" id="sq00"><div class="mark"></div></div>
+        <div class="square-item" id="sq01"><div class="mark"></div></div>
+        <div class="square-item" id="sq02"><div class="mark"></div></div>
+        <div class="square-item" id="sq10"><div class="mark"></div></div>
+        <div class="square-item" id="sq11"><div class="mark"></div></div>
+        <div class="square-item" id="sq12"><div class="mark"></div></div>
+        <div class="square-item" id="sq20"><div class="mark"></div></div>
+        <div class="square-item" id="sq21"><div class="mark"></div></div>
+        <div class="square-item" id="sq22"><div class="mark"></div></div>
+      </div>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
